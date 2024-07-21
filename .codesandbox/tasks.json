@@ -2,8 +2,12 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
-      "command": "run vm",
-      "name": "r"
+      "name": "r",
+      "command": "yarn install"
+    },
+    {
+      "command": "cd server && pip install -r requirements.txt",
+      "name": "c"
     }
   ],
 
